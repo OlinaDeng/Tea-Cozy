@@ -116,48 +116,59 @@ h2 {
 
 .container {
     flex-direction: column;
-    border: 10px solid red;
     width: 300px;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 30px; 
-    /* This is temporary ^^^ */
-    /* z-index: 30;
-    position: absolute;
-    opacity: 100%; */
+    background-color: black;
+    opacity: 1;
 }
 
 #locations-title {
-display: flex;
-justify-content: center;
-margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 1000;
+    background-color: transparent;
 }
 
 #locations h3 {
-font-size: 30px;
+    font-size: 30px;
 }
 
 #locations p {
     font-size: 22px;
 }
 
+#position {
+    position: relative;
+    height: 900px;
+    text-align: center;
+    top: 60px;
+}
+
+#location-background-image {
+    width: 95%;
+    height: 800px;
+} 
+
 #locations {
     display: flex;
     justify-content: center;
     gap: 40px;
+    position: absolute;
+    top: 415px;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: transparent;
 }
 
-/* #location-background-image {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 700px;
-    background-color: yellow;
-    z-index: 5;
-} */
+/* This is the footer section */
 
 #footer {
     height: 200px;
@@ -180,4 +191,4 @@ font-size: 30px;
     margin-left: 20px;
     font-size: 22px;
     font-weight: bold;
-}
+} 
